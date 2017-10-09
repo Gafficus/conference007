@@ -171,6 +171,7 @@
                 <script>
                   function updateTotal()
                   {
+                    document.getElementById("total").innerHTML = "Yo";
                   }
                 </script>
                 <form>
@@ -178,7 +179,7 @@
                     <label><input type="checkbox" value="">Option 1</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" value="" onchange='document.getElementById("total").innerHTML = YO!'>Option 2</label>
+                    <label><input type="checkbox" value="" onchange='updateTotal()'>Option 2</label>
                   </div>
                   <div class="checkbox disabled">
                     <label><input type="checkbox" value="" disabled>Option 3</label>
